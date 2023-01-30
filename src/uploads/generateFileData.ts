@@ -7,7 +7,7 @@ import { Collection } from '../collections/config/types';
 import { SanitizedConfig } from '../config/types';
 import { FileUploadError, MissingFile } from '../errors';
 import { PayloadRequest } from '../express/types';
-import getImageSize, { ProbedImageSize } from './getImageSize';
+import getImageSize from './getImageSize';
 import getSafeFileName from './getSafeFilename';
 import resizeAndSave from './imageResizer';
 import { FileData, FileToSave } from './types';

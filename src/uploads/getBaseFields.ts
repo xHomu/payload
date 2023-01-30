@@ -81,7 +81,7 @@ const getBaseUploadFields = ({ config, collection }: Options): Field[] => {
     {
       ...url,
       hooks: {
-        afterRead: [
+        beforeValidate: [
           ({ data }) => {
             if (data?.filename) {
               return `${config.serverURL}${uploadOptions.staticURL}/${data.filename}`;
